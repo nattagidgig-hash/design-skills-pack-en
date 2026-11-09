@@ -36,6 +36,9 @@ If the requester says "up to you" or "just make it pretty", propose 3 style opti
 7. `motion-feedback` - meaningful motion and feedback
 8. `craft-polish` - pro-level finishing and QA
 
+After the Style Lock is approved, use `charles-unslop` (bundled in `09-charles-unslop`) as the execution engine for steps 2-8 when you are changing real UI: it holds the full audit list (`references/signs.md`), exact starting values (`references/tokens.md`), and the ordered passes. The numbered skills above provide the interview, the approval gates, and the Before/After reporting around it.
+For motion verified frame by frame, install `charles-polish` separately (see README).
+
 Do not skip steps. Do not add motion before the hierarchy is settled.
 
 ### 3. Work in Before / After rounds

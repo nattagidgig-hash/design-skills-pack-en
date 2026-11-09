@@ -9,6 +9,8 @@ for d in sorted(root.glob("0*/")):
     meta = dict(l.split(": ", 1) for l in m.group(1).splitlines() if ": " in l)
     body = m.group(2).strip()
     combined.append(f"\n\n---\n\n## SKILL: {meta['name']}\n> {meta['description']}\n\n{body}\n")
+    for ref in sorted((d / "references").glob("*.md")) if (d / "references").is_dir() else []:
+        combined.append(f"\n\n### Reference: {d.name}/references/{ref.name}\n\n{ref.read_text(encoding='utf8')}\n")
     # Cursor rule: agent-requestable by description
     (dist / "cursor-rules" / f"{d.name}.mdc").write_text(
         f"---\ndescription: {meta['description']}\nalwaysApply: false\n---\n\n{body}\n", encoding="utf8")

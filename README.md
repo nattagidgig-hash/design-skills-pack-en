@@ -3,8 +3,7 @@
 Agent skills for professional UX/UI design that avoids "AI slop". Based on the ideas in Charles Liu's *Removing AI Slop* series (Instagram: charles.unemployed).
 The core rule of every skill: **ask the requester about their style first, never guess**, until they reply **"locked"**. Only then start designing, and loop until the QA checklist passes.
 
-> **Unofficial.** This pack is an independent summary of public content by Charles Liu and is not affiliated with or endorsed by him. His own skill is called `charles-unslop`. Please check out and credit his original work.
-> Thai version: https://github.com/nattagidgig-hash/design-skills-pack (private)
+> **Unofficial.** Not affiliated with or endorsed by Charles Liu. Skills 00-08 are an independent, interview-first workflow built from his public *Removing AI Slop* content. Skill **09 `charles-unslop` is the real skill**, bundled unmodified from https://github.com/LemonFace0309/charles-skills under CC BY 4.0 (see Credits).
 
 ## Quick start
 Tell your AI:
@@ -87,6 +86,20 @@ Each round reports **Before / After / Why**. If the done-criteria are not met, i
 - **Closing questions:** does it feel more expensive on a real phone, where does it still feel AI-made, plainer or more personality, lock or make a version B.
 - If it fails, loop back to the relevant skill; never force delivery.
 
+### 09 charles-unslop (full engine, bundled)
+- **What it is:** the complete, long-form skill (~47KB with references) that the series is built on, not a summary. Adapted by that repo from Damir Sokolovsky's `unslop`, merged with Emil Kowalski's `unslop-design`, with feedback from Charles Liu's series.
+- **How it works:** render the screen, audit against `references/signs.md`, write a 5-line Direction (product, character, world, moment, signature), **subtract first**, then run 9 ordered passes: spacing, color, icons, copy, type, layout, details, "the moment", motion. Ends with a 5-point final audit.
+- **References:** `signs.md` (full list of tells), `tokens.md` (exact starting values), `visuals.md` (choosing/generating scenes and objects), `effects.md` (code treatments).
+- **Division of labour:** 00-08 handle the interview, Style Lock approval and Before/After reporting; 09 does the actual rework.
+
+## Also by the same author (not bundled)
+Not redistributed here because their license is unstated. Install directly:
+```
+npx skills add LemonFace0309/charles-skills --skill charles-polish
+npx skills add LemonFace0309/charles-skills --skill charles-unreasonable-craft
+```
+`charles-polish` hill-climbs a working UI and verifies motion frame by frame; `charles-unreasonable-craft` pushes toward an award-level bar.
+
 ## Companion files
 - `STYLE-BRIEF-TEMPLATE.md` - Style Lock form
 - `FINAL-QA-CHECKLIST.md` - 15-point pre-delivery checklist
@@ -119,5 +132,6 @@ Edit `0*/SKILL.md`, then run `python build.py` to regenerate `dist/`.
 ## Contributing
 Issues and PRs welcome, especially: verified install paths for more tools, better wording, and real before/after examples.
 
-## License
-MIT
+## Credits & license
+- `09-charles-unslop/` is from https://github.com/LemonFace0309/charles-skills, **CC BY 4.0**. Adapted from [unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky (@heydamir, CC BY 4.0), merged with Emil Kowalski's unslop-design skill and feedback from Charles Liu's "Removing AI Slop" series. Included unmodified apart from line endings; keep this credit in copies.
+- Everything else in this repo: MIT.

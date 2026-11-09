@@ -5,7 +5,9 @@ alwaysApply: false
 
 # Unslop Audit - audit the slop before fixing it
 
-## Definition of AI slop (per Charles Liu)
+> For the full audit, read `09-charles-unslop/references/signs.md` (the complete list of signs with how to fix each). The 20 below are a quick screening pass.
+
+## Definition of AI slop
 Not "ugly vs. pretty". Slop is work that looks AI-made because it applies every trend at once, with no core idea and no reason behind any choice.
 
 ## The 20 Slop Indicators - check each one

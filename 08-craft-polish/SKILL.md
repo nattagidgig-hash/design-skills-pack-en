@@ -8,6 +8,8 @@ description: Final professional polish pass. Use as the last step before deliver
 ## Principle
 The gap between AI work and professional work is in details most people can't name but can feel.
 
+> Exact numbers (spacing, radii, type sizes, shadows) are in `09-charles-unslop/references/tokens.md`. For frame-by-frame motion verification and hill-climbing a working UI, use Charles Liu's `charles-polish` (install separately, see README).
+
 ## Polish checklist
 
 **Shape and shadow:**
