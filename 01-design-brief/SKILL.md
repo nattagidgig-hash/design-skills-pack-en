@@ -1,0 +1,53 @@
+---
+name: design-brief
+description: Design brief interview. Use before starting any design work to ask the requester about their style until it is locked into a Style Lock. Never guess the style.
+---
+
+# Design Brief - ask until locked, never guess
+
+## Purpose
+Turn "make it pretty / make it look good / make it professional" into a measurable spec.
+
+## Question set 1: Product
+1. What should the user accomplish on this screen?
+2. If the user looks for only 3 seconds, what one thing must they remember?
+3. Which competitors or references do they like, and why?
+4. Which reference do they dislike, and why?
+
+## Question set 2: Style
+Offer choices. Do not ask "what style do you like?" in the abstract.
+
+**Mood:** Premium / Playful / Calm / Bold / Luxury / Friendly / Futuristic / Editorial / Minimal / Skeuomorphic
+**Density:** Very airy / Airy / Medium / Dense (dashboard-like)
+**Color:** Monochrome + 1 accent / 2 brand colors / Gradient with a reason / Dark mode / Light mode
+**Type:** Serif / Clean sans / Mono for numbers and code only / Systematic mix
+**Shape:** Very rounded / Medium rounded / Sharp / Concentric radius
+**Motion:** Still and calm / Soft and smooth / Bouncy and fun / Fast and snappy
+
+## Question set 3: Constraints
+1. Must the existing logo, colors, or fonts stay?
+2. Which words in the content must not change?
+3. Mobile-first or desktop-first?
+4. Are there users who are not tech-savvy? Is accessibility a requirement?
+
+## Output: the Style Lock
+Summarize in a short block like this, then wait for the requester to type "locked":
+
+```
+Product: ...
+One Idea: ...
+Mood: ...
+Color: ...
+Type: ...
+Radius / Shadow: ...
+Motion: ...
+One CTA: ...
+Do not: ...
+```
+
+Do not start designing until the requester has said "locked".
+
+## Golden rules
+- If the requester says "up to you", propose 3 style sets A / B / C with a short description of each. Do not choose for them.
+- If the requester changes their mind midway, update the Style Lock and say which parts need to change as a result.
+- Every later design decision must be traceable to the Style Lock.

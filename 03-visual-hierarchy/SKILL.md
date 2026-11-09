@@ -1,0 +1,35 @@
+---
+name: visual-hierarchy
+description: Sets visual hierarchy so a viewer knows in 3 seconds what to look at first. Use when a page is crowded, everything competes for attention, or the CTA does not stand out.
+---
+
+# Visual Hierarchy - make the eye know where to go first
+
+## Principles (from Charles Liu)
+- 1 screen = 1 hero + 1 primary CTA
+- If everything is emphasized, nothing is
+- Big = important, close = related, space = breathing room
+
+## Steps
+1. Ask the requester: what is the single most important action?
+2. Make that the largest, clearest element, in the position the eye reaches first.
+3. Reduce everything else by one level: smaller, lighter, or hidden for now.
+4. Group with spacing instead of boxes and borders.
+
+## Rules to apply
+- Remove filler badges and duplicate labels
+- Headlines must be specific and measurable, e.g. "Agents that survive production" becomes "Cited answers from papers"
+- The primary CTA must be clearly stronger than secondary buttons, not just slightly
+- Show the actual product, not decorative imagery
+- Enlarge the main feature; don't give every card equal weight
+- Align by eye, not by rigid pixel math
+
+## Questions to ask the requester
+1. If only one button could stay on this screen, which one?
+2. What should be seen second and third?
+3. Is any important information unnecessary at first glance and could sit behind a click?
+
+## Checklist to finish this step
+- From 1 meter away you can still tell where the CTA is
+- The headline is understood within 3 seconds
+- No two things fight for attention at the same level

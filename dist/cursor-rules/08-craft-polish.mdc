@@ -1,0 +1,44 @@
+---
+description: Final professional polish pass. Use as the last step before delivery to check the small details that make work feel expensive.
+alwaysApply: false
+---
+
+# Craft Polish - the small details that feel expensive
+
+## Principle
+The gap between AI work and professional work is in details most people can't name but can feel.
+
+## Polish checklist
+
+**Shape and shadow:**
+- Inner radius = outer radius - padding, always (concentric corners)
+- Shadows use the scene's color, not pure black, and are layered lightly
+- Consistent spacing on a 4 / 8pt system
+
+**Type and numbers:**
+- Tabular numbers for values that change
+- Headlines wrap cleanly with no orphaned words
+- Contrast passes readability standards
+
+**Icons and imagery:**
+- Icons share one style and stroke weight
+- The logo has a small micro-interaction (e.g. a window-seat logo shaped like an airplane window that moves)
+- Backgrounds relate to the product (a flight app uses sky above the clouds, not a floating purple gradient)
+
+**Skeuomorphism with a reason:**
+- Use it when it helps users understand the real thing faster, e.g. boarding pass / airplane window / age wheel
+- Never just for realism if it adds clutter
+
+## Final questions to ask the requester
+1. Viewed on a real phone, does it feel more expensive? Where does it still feel AI-made?
+2. Is there anywhere you want it plainer, or with more personality?
+3. Ready to lock this version, or do you want a version B to compare?
+
+## Delivery criteria
+Ready to deliver when:
+- On first look it is clear what product this is
+- No slop remains without a reason
+- Every button gives feedback
+- The requester says "locked"
+
+If not, go back to the relevant skill. Do not force delivery.

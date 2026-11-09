@@ -1,0 +1,38 @@
+---
+description: Builds a professional type and color system instead of random choices. Use when there are many fonts, many shades, hard-to-read text, or low contrast.
+alwaysApply: false
+---
+
+# Typography and Color - a system, not randomness
+
+## Principles
+- A font must have a job, not just look nice
+- A color must have a reason, not just add variety
+
+## Typography
+1. One primary font and one secondary font. No more.
+2. Mono only where needed: numbers, code, time, IDs.
+3. No random italics. No long ALL CAPS.
+4. Use tabular numbers so values don't jump when they change.
+5. Wrap headlines well; never leave a single word orphaned on the last line.
+6. Keep letter spacing consistent; no negative kerning that hurts reading.
+
+## Questions to ask the requester
+1. Serif, sans, or an editorial magazine feel?
+2. Is there a brand font that must be used?
+3. Are there older users or users with weak eyesight who need larger text?
+
+## Color
+1. One primary, one accent, one or two backgrounds. Done.
+2. No default purple AI gradient unless the product gives a reason.
+3. If you use a gradient, you must be able to say what it means (e.g. orange-to-lavender in a fitness app = energy + calm).
+4. Tune contrast so text is readable, especially small and secondary text.
+5. Shadows take the color of the scene, not pure black (e.g. a flight app login uses sky-blue shadows).
+
+## Output
+Deliver Color Tokens and a Type Scale:
+- Primary / Accent / Background / Surface / Text Primary / Text Secondary
+- H1 / H2 / Body / Caption with sizes and weights
+- Examples of where each is used
+
+Ask the requester whether this matches the Style Lock. If not, fix it before moving on.

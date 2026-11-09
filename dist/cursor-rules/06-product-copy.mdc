@@ -1,0 +1,33 @@
+---
+description: Writes specific, concrete product copy instead of generic AI wording. Use when a headline sounds AI-written, text is wordy, or users can't tell what the product does.
+alwaysApply: false
+---
+
+# Product Copy - say it clearly, don't try to sound smart
+
+## Principles
+- AI writes broadly because it doesn't know the real product. The designer must write specifically.
+- Remove repeated words, decorative words, and words that don't help a decision.
+
+## Rules
+1. A headline answers: what it does, for whom, what they get, how it is measured.
+   Bad: "Agents that survive production"
+   Good: "Cited answers from papers"
+
+2. Remove these words unless there is evidence: Revolutionary / Cutting-edge / Seamless / Unlock / Elevate / Supercharge / AI-Powered
+
+3. Show the real thing. For a running app, show the actual 12-week plan. For a flight app, show a real SFO to JFK ticket. Don't show empty boxes.
+
+4. Button labels state the outcome, not the function.
+   Bad: Submit / Verify Code
+   Good: Add 36 runs to your calendar / Verify and continue
+
+5. Help text is short and appears when the user needs it, not all upfront.
+
+## Questions to ask the requester
+1. How would you explain this product to a friend in one sentence?
+2. What do customers complain about most? Could that sentence be the headline?
+3. Are there real numbers to use, e.g. 36 runs / 12 weeks / saves 20 minutes?
+
+## Output
+Provide Before / After for every important piece of text, with the reason the new version is better.
