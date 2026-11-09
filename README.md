@@ -29,6 +29,8 @@ If you answer "up to you", the skill forces the AI to propose 3 style sets (A/B/
 `00 design-master` runs this order; no skipping, and no motion before hierarchy is settled.
 Each round reports **Before / After / Why**. If the done-criteria are not met, it asks what to fix next instead of declaring itself finished.
 
+> Works for any work type, not only login screens: `design-master` starts by identifying the type (landing, dashboard/app, form/checkout, long-form, settings/admin, email/slides/social) and weights the skills accordingly.
+
 ## The skills
 
 ### 00 design-master (orchestrator)

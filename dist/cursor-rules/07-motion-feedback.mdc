@@ -26,6 +26,13 @@ Good motion tells the user what is happening. It is not there to look flashy.
 **Login:**
 - Shared-element transition, e.g. a card flying from the login screen into a boarding pass.
 
+## More examples (general principles, not from the series)
+- **Dashboard numbers:** animate value changes briefly with tabular figures; never animate on every refresh.
+- **Landing page scroll:** reveal only what supports the story. Don't fade in every section; keep content visible without JS or motion.
+- **Lists and tables:** animate insert/remove so the eye tracks what changed; keep row height stable.
+- **Settings toggles and saves:** instant visual change plus a small "Saved" confirmation, not a modal.
+- **Content pages:** usually little or no motion. Stillness is a valid choice.
+
 ## Rules
 1. Every animation must answer: what does it tell the user?
 2. Duration: micro-interactions 150-250ms, transitions 300-400ms. Never so slow it feels laggy.

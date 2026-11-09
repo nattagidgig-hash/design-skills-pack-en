@@ -6,7 +6,7 @@ UX/UI design rules (anti-AI-slop). For any design task, start with design-master
 ---
 
 ## SKILL: design-master
-> Orchestrator for all UI/UX design work. Use when the user says "design this", "improve this design", "unslop this page" or similar. Interviews the requester until the style is locked, runs the sub-skills in order, and does not stop until the result is complete.
+> Orchestrator for all UI/UX design work. Works for any work type (landing pages, dashboards, forms, content pages, emails, slides, social posts), not just login screens. Use when the user says "design this", "improve this design", "unslop this page" or similar. Interviews the requester until the style is locked, runs the sub-skills in order, and does not stop until the result is complete.
 
 # Design Master - the orchestrator
 
@@ -16,6 +16,20 @@ Don't just stop when it works. Keep going until it feels expensive, intentional,
 Good work = 1 core idea + clear visual hierarchy + meaningful motion + complete states + specific copy.
 
 ## Mandatory steps
+
+### 0. Identify the work type first
+Not everything is a login screen. Ask (or infer and confirm) which type this is, then weight the skills and questions accordingly:
+
+| Type | What matters most | Lean hardest on |
+|---|---|---|
+| Landing / marketing page | Hero, one promise, proof, CTA | visual-hierarchy, product-copy, typography-color |
+| App or dashboard used daily | Density, scanability, numbers, calm neutral surfaces | typography-color (tabular nums), ux-states-flow, craft-polish |
+| Form, checkout, onboarding, auth | Friction, errors, recovery | ux-states-flow, product-copy, motion-feedback |
+| Long-form content (article, docs, listing page) | Reading rhythm, measure, navigation | typography-color, visual-hierarchy |
+| Settings, tables, admin | Clarity over decoration, empty states | ux-states-flow, visual-hierarchy |
+| Email, slides, social post, thumbnail | Small/fast viewing, one idea per frame | visual-hierarchy, product-copy |
+
+The "one primary action" question applies to screens with an action. For content pages the equivalent is "what should the reader remember or do next?"; for dashboards it is "what decision does this support?". Record the type in the Style Lock.
 
 ### 1. Interview first. Never guess.
 If there is no Style Lock yet, do not start designing. Run the `design-brief` questions, summarize the answers as a Style Lock, and get the requester's approval.
@@ -76,7 +90,8 @@ If it does not pass, ask which part to fix next. Do not declare it finished your
 Turn "make it pretty / make it look good / make it professional" into a measurable spec.
 
 ## Question set 1: Product
-1. What should the user accomplish on this screen?
+0. What type of work is this? (landing page / app or dashboard / form or checkout / long-form content / settings or admin / email, slides, social post)
+1. What should the user accomplish here? (For content: what should the reader remember or do next? For dashboards: what decision does it support?)
 2. If the user looks for only 3 seconds, what one thing must they remember?
 3. Which competitors or references do they like, and why?
 4. Which reference do they dislike, and why?
@@ -101,6 +116,7 @@ Offer choices. Do not ask "what style do you like?" in the abstract.
 Summarize in a short block like this, then wait for the requester to type "locked":
 
 ```
+Type: ...
 Product: ...
 One Idea: ...
 Mood: ...
@@ -108,7 +124,7 @@ Color: ...
 Type: ...
 Radius / Shadow: ...
 Motion: ...
-One CTA: ...
+One CTA / main job: ...
 Do not: ...
 ```
 
@@ -280,6 +296,15 @@ If any is missing, ask the requester how it should look. Do not let the AI guess
 
 **AI chat:** Show what the AI is doing ("Reading your runs", "Checking your calendar") to build trust. Cite where data comes from. Prevent layout shift by reserving space while text streams.
 
+## More examples (general principles, not from the series)
+**Dashboard:** every widget needs loading (skeleton at final size), empty ("No data yet" plus how to get some), error (what failed, retry), and stale-data states. Show units and the time range. Don't let a card collapse when empty.
+
+**Checkout:** keep the order summary visible, validate fields inline on blur, keep entered data after an error, make the payment-failed state say what to do next.
+
+**Long list / table:** empty, filtered-to-nothing (offer "clear filters"), partial load, and pagination or "load more" state.
+
+**Settings:** show saved/unsaved state, confirm destructive actions with the consequence in plain words, make Undo available where possible.
+
 ## Questions to ask the requester
 1. If the user enters something wrong, how do we tell them what and where?
 2. If loading takes longer than 3 seconds, what do we show?
@@ -355,6 +380,13 @@ Good motion tells the user what is happening. It is not there to look flashy.
 **Login:**
 - Shared-element transition, e.g. a card flying from the login screen into a boarding pass.
 
+## More examples (general principles, not from the series)
+- **Dashboard numbers:** animate value changes briefly with tabular figures; never animate on every refresh.
+- **Landing page scroll:** reveal only what supports the story. Don't fade in every section; keep content visible without JS or motion.
+- **Lists and tables:** animate insert/remove so the eye tracks what changed; keep row height stable.
+- **Settings toggles and saves:** instant visual change plus a small "Saved" confirmation, not a modal.
+- **Content pages:** usually little or no motion. Stillness is a valid choice.
+
 ## Rules
 1. Every animation must answer: what does it tell the user?
 2. Duration: micro-interactions 150-250ms, transitions 300-400ms. Never so slow it feels laggy.
@@ -405,6 +437,13 @@ The gap between AI work and professional work is in details most people can't na
 **Skeuomorphism with a reason:**
 - Use it when it helps users understand the real thing faster, e.g. boarding pass / airplane window / age wheel
 - Never just for realism if it adds clutter
+
+## By work type (general principles, not from the series)
+- **Landing:** hero fits the first screen at common sizes; one primary CTA repeated, not many different ones; real product image, not an illustration of the idea.
+- **Dashboard/app:** alignment of numbers, consistent row heights, restrained color (color lives in the data), keyboard focus visible.
+- **Forms:** label always visible, error text next to the field, correct input types and autocomplete.
+- **Long-form:** line length about 60-75 characters, comfortable line height, clear heading rhythm.
+- **Email/slides/social:** check at the real viewing size; keep every needed word readable at that size.
 
 ## Final questions to ask the requester
 1. Viewed on a real phone, does it feel more expensive? Where does it still feel AI-made?

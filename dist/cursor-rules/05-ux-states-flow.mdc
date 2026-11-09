@@ -26,6 +26,15 @@ If any is missing, ask the requester how it should look. Do not let the AI guess
 
 **AI chat:** Show what the AI is doing ("Reading your runs", "Checking your calendar") to build trust. Cite where data comes from. Prevent layout shift by reserving space while text streams.
 
+## More examples (general principles, not from the series)
+**Dashboard:** every widget needs loading (skeleton at final size), empty ("No data yet" plus how to get some), error (what failed, retry), and stale-data states. Show units and the time range. Don't let a card collapse when empty.
+
+**Checkout:** keep the order summary visible, validate fields inline on blur, keep entered data after an error, make the payment-failed state say what to do next.
+
+**Long list / table:** empty, filtered-to-nothing (offer "clear filters"), partial load, and pagination or "load more" state.
+
+**Settings:** show saved/unsaved state, confirm destructive actions with the consequence in plain words, make Undo available where possible.
+
 ## Questions to ask the requester
 1. If the user enters something wrong, how do we tell them what and where?
 2. If loading takes longer than 3 seconds, what do we show?

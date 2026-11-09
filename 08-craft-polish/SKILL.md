@@ -31,6 +31,13 @@ The gap between AI work and professional work is in details most people can't na
 - Use it when it helps users understand the real thing faster, e.g. boarding pass / airplane window / age wheel
 - Never just for realism if it adds clutter
 
+## By work type (general principles, not from the series)
+- **Landing:** hero fits the first screen at common sizes; one primary CTA repeated, not many different ones; real product image, not an illustration of the idea.
+- **Dashboard/app:** alignment of numbers, consistent row heights, restrained color (color lives in the data), keyboard focus visible.
+- **Forms:** label always visible, error text next to the field, correct input types and autocomplete.
+- **Long-form:** line length about 60-75 characters, comfortable line height, clear heading rhythm.
+- **Email/slides/social:** check at the real viewing size; keep every needed word readable at that size.
+
 ## Final questions to ask the requester
 1. Viewed on a real phone, does it feel more expensive? Where does it still feel AI-made?
 2. Is there anywhere you want it plainer, or with more personality?

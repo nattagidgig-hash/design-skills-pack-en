@@ -1,6 +1,6 @@
 ---
 name: design-master
-description: Orchestrator for all UI/UX design work. Use when the user says "design this", "improve this design", "unslop this page" or similar. Interviews the requester until the style is locked, runs the sub-skills in order, and does not stop until the result is complete.
+description: Orchestrator for all UI/UX design work. Works for any work type (landing pages, dashboards, forms, content pages, emails, slides, social posts), not just login screens. Use when the user says "design this", "improve this design", "unslop this page" or similar. Interviews the requester until the style is locked, runs the sub-skills in order, and does not stop until the result is complete.
 ---
 
 # Design Master - the orchestrator
@@ -11,6 +11,20 @@ Don't just stop when it works. Keep going until it feels expensive, intentional,
 Good work = 1 core idea + clear visual hierarchy + meaningful motion + complete states + specific copy.
 
 ## Mandatory steps
+
+### 0. Identify the work type first
+Not everything is a login screen. Ask (or infer and confirm) which type this is, then weight the skills and questions accordingly:
+
+| Type | What matters most | Lean hardest on |
+|---|---|---|
+| Landing / marketing page | Hero, one promise, proof, CTA | visual-hierarchy, product-copy, typography-color |
+| App or dashboard used daily | Density, scanability, numbers, calm neutral surfaces | typography-color (tabular nums), ux-states-flow, craft-polish |
+| Form, checkout, onboarding, auth | Friction, errors, recovery | ux-states-flow, product-copy, motion-feedback |
+| Long-form content (article, docs, listing page) | Reading rhythm, measure, navigation | typography-color, visual-hierarchy |
+| Settings, tables, admin | Clarity over decoration, empty states | ux-states-flow, visual-hierarchy |
+| Email, slides, social post, thumbnail | Small/fast viewing, one idea per frame | visual-hierarchy, product-copy |
+
+The "one primary action" question applies to screens with an action. For content pages the equivalent is "what should the reader remember or do next?"; for dashboards it is "what decision does this support?". Record the type in the Style Lock.
 
 ### 1. Interview first. Never guess.
 If there is no Style Lock yet, do not start designing. Run the `design-brief` questions, summarize the answers as a Style Lock, and get the requester's approval.
